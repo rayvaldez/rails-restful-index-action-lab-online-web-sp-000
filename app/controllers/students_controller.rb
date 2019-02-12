@@ -1,7 +1,6 @@
 class StudentsController < ApplicationController
 
   def students
-    binding.pry
     render "students"
   end
 
