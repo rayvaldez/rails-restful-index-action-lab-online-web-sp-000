@@ -256,3 +256,29 @@ Processing by StudentsController#index as HTML
   [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
   Rendered students/index.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index" for 82.34.97.218 at 2019-02-12 20:03:59 +0000
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/Ray-Valdez/rails-restful-index-action-lab-online-web-sp-000/app/views/students/index.html.erb:3: syntax error, unexpected ')'
+...buffer.append=( student.to_s <);@output_buffer.safe_append='...
+...                               ^
+/home/Ray-Valdez/rails-restful-index-action-lab-online-web-sp-000/app/views/students/index.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/Ray-Valdez/rails-restful-index-action-lab-online-web-sp-000/app/views/students/index.html.erb:8: syntax error, unexpected keyword_ensure, expecting ')'
+/home/Ray-Valdez/rails-restful-index-action-lab-online-web-sp-000/app/views/students/index.html.erb:10: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/students/index.html.erb:3: syntax error, unexpected ')'
+  app/views/students/index.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+  app/views/students/index.html.erb:8: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/students/index.html.erb:10: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/students_controller.rb:9:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
