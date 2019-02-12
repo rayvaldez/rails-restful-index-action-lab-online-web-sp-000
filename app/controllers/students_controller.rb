@@ -4,7 +4,4 @@ class StudentsController < ApplicationController
     index.erb.html
   end
 
-  GET '/students' do
-    students.erb.html
-  end
 end
