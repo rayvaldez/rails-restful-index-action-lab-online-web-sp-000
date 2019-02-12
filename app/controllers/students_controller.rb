@@ -1,6 +1,5 @@
 class StudentsController < ApplicationController
 
-  GET '/students' do
-
+  def students
   end
 end
